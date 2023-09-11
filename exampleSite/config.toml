@@ -1,6 +1,6 @@
-baseurl = "https://username.github.io"
+baseurl = "https://github.com/mikhaylo1/beautifulhugo"
 DefaultContentLanguage = "en"
-title = "Beautiful Hugo"
+title = "DeskCamera"
 theme = "beautifulhugo"
 pygmentsStyle = "trac"
 pygmentsUseClasses = true
@@ -12,22 +12,22 @@ pygmentsCodefencesGuessSyntax = true
 #googleAnalytics = "XXX"
 
 [Params]
-#  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
-  subtitle = "Build a beautiful and simple website in minutes"
+  homeTitle = "DeskCamera" # Set a different text for the header on the home page
+  subtitle = "Virtual ONVIF & RTSP Camera for Recording PC Screen to VMS"
   mainSections = ["post","posts"]
-  logo = "img/avatar-icon.png" # Expecting square dimensions
+  logo = "img/deskcamera-icon.png" # Expecting square dimensions
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
-  comments = true
-  readingTime = true
-  wordCount = true
+  comments = false
+  readingTime = false
+  wordCount = false
   useHLJS = true
   socialShare = true
   delayDisqus = true
-  showRelatedPosts = true
-#  hideAuthor = true
+  showRelatedPosts = false
+  hideAuthor = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 #  disclaimerText = "The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way."
 
@@ -45,21 +45,21 @@ pygmentsCodefencesGuessSyntax = true
 
 [Author]
   # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
-  name = "Some Person"
-  website = "yourwebsite.com"
-  email = "youremail@domain.com"
-  facebook = "username"
+  name = "DeskCamera"
+  website = "https://www.blog.deskcamera.com"
+  email = "sales@deskcamera.com"
+  facebook = "https://www.facebook.com/DeskCamera"
   github = "username"
   gitlab = "username"
   bitbucket = "username"
-  twitter = "username"
+  twitter = "https://twitter.com/DeskCamera"
   reddit = "username"
-  linkedin = "username"
+  linkedin = "https://www.linkedin.com/company/deskcamera"
   xing = "username"
   stackoverflow = "users/XXXXXXX/username"
   snapchat = "username"
   instagram = "username"
-  youtube = "user/username" # or channel/channelname
+  youtube = "https://www.youtube.com/channel/UCYssNv4bAAGV599DHDlYtkw" # or channel/channelname
   soundcloud = "username"
   spotify = "username"
   bandcamp = "username"
@@ -83,34 +83,64 @@ pygmentsCodefencesGuessSyntax = true
     weight = 1
 
 [[menu.main]]
-    name = "About"
-    url = "page/about/"
-    weight = 3
-
-[[menu.main]]
-    identifier = "samples"
-    name = "Samples"
+    identifier = "industries"
+    name = "Industries"
     weight = 2
-
+    
 [[menu.main]]
-    parent = "samples"
-    name = "Big Image Sample"
-    url = "post/2017-03-07-bigimg-sample"
+    parent = "industries"
+    name = "Retail & POS Surveillance"
+    url = "post/retail"
     weight = 1
 
 [[menu.main]]
-    parent = "samples"
-    name = "Math Sample"
-    url = "post/2017-03-05-math-sample"
+    parent = "industries"
+    name = "CNI & Manufacturing"
+    url = "post/manufacturing"
     weight = 2
 
 [[menu.main]]
-    parent = "samples"
-    name = "Code Sample"
-    url = "post/2016-03-08-code-sample"
+    parent = "industries"
+    name = "Airports"
+    url = "post/airports"
     weight = 3
 
 [[menu.main]]
-    name = "Tags"
-    url = "tags"
+    parent = "industries"
+    name = "City Surveillance"
+    url = "post/city"
+    weight = 4
+
+[[menu.main]]
+    parent = "industries"
+    name = "Casinos"
+    url = "post/casinos"
+    weight = 5
+
+[[menu.main]]
+    parent = "industries"
+    name = "Education & Healthcare"
+    url = "post/healthcare"
+    weight = 6
+
+[[menu.main]]
+    parent = "industries"
+    name = "Banking"
+    url = "post/banking"
+    weight = 7
+
+[[menu.main]]
+    parent = "industries"
+    name = "Other industries"
+    url = "post/other"
+    weight = 8
+
+[[menu.main]]
+    name = "Try for free"
+    url = "https://www.deskcamera.com/free-trial/"
     weight = 3
+
+[[menu.main]]
+    name = "Purchase"
+    url = "https://www.deskcamera.com/purchase/"
+    weight = 4
